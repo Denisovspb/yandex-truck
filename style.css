@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background: blanchedalmond;
+    max-width: 1190px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 235px;
+    position: relative;
+}
+.triangle {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right: 60px solid #FF0000; 
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stick {
+    width: 5px;
+    height: 320px;
+    background: #999999;
+}
+
+.iphone {
+    border: 0px solid black;
+    border-top-width: 8px;
+    border-radius: 5px 5px 0 0;
+    background: #666666;
+    height: 32px;
+    width: 50px;
+}
+
+.oval {
+    background: #d8d8d8;
+    width: 535px;
+    height: 50px;
+    border-radius: 10% 50% 0 0/ 100% 100% 0px 0px;
+    margin-left: 30px;
+}
+
+.red-line {
+    background: #FF0000;
+    height: 15px;
+    width: 540px;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+.red-body {
+    width: 520px;
+    height: 130px;
+    background: #f45a3b;
+    border-radius: 0 0 30px 30px;
+    margin-left: 30px;
+}
+
+.black-figure {
+    background: #222222;
+    width: 490px;
+    height: 30px;
+    margin-left: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.black-figure::before {
+    border-bottom: 10px solid #222222;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 470px;
+    content: "";
+    position: absolute;
+    top: -10px;
+}
+
+.black-figure::after {
+    border-top: 60px solid #222222;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    height: 0;
+    width: 380px;
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    z-index: -1;
+}
+
+.trapezia {
+    border-bottom: 55px solid #000000;
+      border-left: 25px solid transparent;
+      height: 0;
+      width: 70px;
+      margin-right: 265px;
+}
+
+.circles {
+  display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  background-color: #000000;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.circle:first-child {
+    margin-right: 25px;
+}
